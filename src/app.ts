@@ -82,7 +82,9 @@ app.post("/cats/", (req, res) => {
     });
   }
 });
+
 //* 404 middleware
+
 app.use((req, res, next) => {
   console.log(req.rawHeaders[1]);
   console.log("this is middleware");
